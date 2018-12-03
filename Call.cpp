@@ -1,13 +1,13 @@
 #include "Call.h"
 
 Call::Call() {
-    m_phoneNumber = "";
-    m_duration = 0;
+    this->m_phoneNumber = "";
+    this->m_duration = 0;
 }
 
-Call::Call(std::string phoneNumber, uint duration) {
-    m_phoneNumber = phoneNumber;
-    m_duration = duration;
+Call::Call(std::string phoneNumber, double duration) {
+    this->m_phoneNumber = phoneNumber;
+    this->m_duration = duration;
 }
 
 Call::~Call() {
@@ -15,9 +15,9 @@ Call::~Call() {
 }
 
 std::string Call::getPhoneNumber() {
-    return m_phoneNumber;
+    return this->m_phoneNumber;
 }
 
-uint Call::getDuration() {
-    return m_duration;
+double Call::getDuration() {
+    return this->m_duration;
 }

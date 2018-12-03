@@ -8,19 +8,20 @@
 class Customer {
 public:
     Customer();
-    Customer(std::string, double);
+    explicit Customer(std::string);
     ~Customer();
     
     void setName(std::string);
     std::string getName();
-    void addCall(uint, uint);
+    void addCall(std::string, double);
     double getBalance();
     void setBalance(double);
     
     virtual void computeBalance();
+
+	std::vector<Call*> m_Calls;
     
 protected:
     std::string m_name;
-    std::vector<*Call> m_Calls;
     double m_balance;
 };

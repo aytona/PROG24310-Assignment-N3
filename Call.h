@@ -5,12 +5,12 @@
 class Call {
 public:
     Call();
-    Call(std::string, uint);
+    Call(std::string, double);
     virtual ~Call();
     
     std::string getPhoneNumber();
-    uint getDuration();
+    double getDuration();
 private:
     std::string m_phoneNumber;
-    uint m_duration;
+    double m_duration;
 };

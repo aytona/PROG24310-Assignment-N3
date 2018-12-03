@@ -1,9 +1,11 @@
 #pragma once
 
+#include "Customer.h"
+
 class PremiumCustomer : public Customer{
+	using Customer::Customer;
+
 public:
-    PremiumCustomer();
-    
     void computeBalance();
 
 private:
