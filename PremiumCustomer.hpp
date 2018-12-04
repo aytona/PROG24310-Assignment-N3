@@ -3,7 +3,7 @@
 #include "Customer.hpp"
 
 class PremiumCustomer : public Customer{
-	using Customer::Customer;
+    using Customer::Customer;
 
 public:
     void computeBalance();
