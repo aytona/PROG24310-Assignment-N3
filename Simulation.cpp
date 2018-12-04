@@ -61,7 +61,8 @@ void Simulation::printResult() {
 
     std::cout << "\tAverage number of calls per customer:\t\t" << (int)regNumOfCalls << std::endl
             << "\tAverage duration of the call per customer:\t" << (int)regDurOfCalls << " mins" << std::endl
-            << "\tAverage balance per customer:\t\t\t$" << regBalance << std::endl
+            << "\tAverage balance per customer:\t\t\t$" << std::fixed << std::setprecision(2)
+            << regBalance << std::endl
             << "\tCustomer with largest balance:\t\t\t" << regLargest.getName() 
             << " ($" << regLargest.getBalance() << ")" << std::endl
             << "\tCustomer with smallest balance:\t\t\t" << regSmallest.getName() 
@@ -152,7 +153,7 @@ std::string Simulation::generateNumber() {
         if (i == 3 || i == 7) {
             number.push_back('-');
         } else {
-            number.push_back((char)rand() % 10);
+            number.push_back(static_cast<char>((int)rand() % 10));
         }
     }
     return number;

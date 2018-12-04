@@ -7,7 +7,8 @@ Call::Call() {
 
 Call::Call(std::string phoneNumber, double duration) {
     this->m_phoneNumber = phoneNumber;
-    this->m_duration = duration;
+    double mins = std::ceil(duration / 60);
+    this->m_duration = mins * 60;
 }
 
 Call::~Call() {
