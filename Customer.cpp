@@ -41,7 +41,6 @@ void Customer::setBalance(double balance) {
 }
 
 
-void Customer::computeBalance()
-{
+void Customer::computeBalance() {
     // Override by child classes
 }
