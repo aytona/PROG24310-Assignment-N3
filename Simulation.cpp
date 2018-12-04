@@ -102,6 +102,14 @@ void Simulation::printResult() {
             << " ($" << premLargest.getBalance() << ")" << std::endl
             << "\tCustomer with smallest balance:\t\t\t" << premSmallest.getName()
             << " ($" << premSmallest.getBalance() << ")" << std::endl;
+    
+    if (premBalance > regBalance) {
+        std::cout << "Regular customers on average save $" << premBalance - regBalance
+                << " compared to Premium customers\n";
+    } else {
+        std::cout << "Premium customers on average save $" << regBalance - premBalance
+                << " compared to Regular customers\n";
+    } 
 }
 
 std::string Simulation::generateName() {
