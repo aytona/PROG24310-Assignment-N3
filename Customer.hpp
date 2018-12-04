@@ -3,7 +3,7 @@
 #include <string>
 #include <vector>
 
-#include "Call.h"
+#include "Call.hpp"
 
 class Customer {
 public:
@@ -19,7 +19,7 @@ public:
     
     virtual void computeBalance();
 
-	std::vector<Call*> m_Calls;
+    std::vector<Call*> m_Calls;
     
 protected:
     std::string m_name;

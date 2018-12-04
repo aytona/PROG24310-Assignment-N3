@@ -1,4 +1,4 @@
-#include "Call.h"
+#include "Call.hpp"
 
 Call::Call() {
     this->m_phoneNumber = "";
@@ -11,7 +11,7 @@ Call::Call(std::string phoneNumber, double duration) {
 }
 
 Call::~Call() {
-    
+    m_phoneNumber.clear();
 }
 
 std::string Call::getPhoneNumber() {

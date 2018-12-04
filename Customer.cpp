@@ -1,4 +1,4 @@
-#include "Customer.h"
+#include "Customer.hpp"
 
 Customer::Customer() {
     this->m_name = "";
@@ -7,11 +7,16 @@ Customer::Customer() {
 
 Customer::Customer(std::string name) {
     this->m_name = name;
-	this->m_balance = 0;
+    this->m_balance = 0;
 }
 
 Customer::~Customer() {
+    // Need to deallocate all calls created in addCall
+    for (int i = m_Calls.size() - 1; i > m_Calls.size(); --i) {
+        delete m_Calls.at(i);
+    }
     m_Calls.clear();
+    m_name.clear();
 }
 
 void Customer::setName(std::string name) {
@@ -38,5 +43,5 @@ void Customer::setBalance(double balance) {
 
 void Customer::computeBalance()
 {
-	// Gets overriden by child classes
+    // Override by child classes
 }

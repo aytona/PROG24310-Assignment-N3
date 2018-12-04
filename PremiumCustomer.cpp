@@ -1,6 +1,6 @@
 #include <vector>
 
-#include "PremiumCustomer.h"
+#include "PremiumCustomer.hpp"
 
 void PremiumCustomer::computeBalance() {
     double balance = 0;

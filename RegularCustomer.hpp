@@ -1,6 +1,6 @@
 #pragma once
 
-#include "Customer.h"
+#include "Customer.hpp"
 
 class RegularCustomer : public Customer {
 	using Customer::Customer;

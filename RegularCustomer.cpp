@@ -1,6 +1,6 @@
 #include <vector>
 
-#include "RegularCustomer.h"
+#include "RegularCustomer.hpp"
 
 void RegularCustomer::computeBalance() {
     double balance = 0;

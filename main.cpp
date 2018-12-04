@@ -3,7 +3,7 @@
  */
 
 #include <cstdlib>
-#include "Simulation.h"
+#include "Simulation.hpp"
 
 using namespace std;
 
@@ -12,6 +12,6 @@ int main() {
     Simulation *sim = new Simulation();
     sim->printResult();
     delete sim;
-
+    
     return 0;
 }

@@ -7,10 +7,10 @@
 #include <iostream>
 #include <locale>
 
-#include "Call.h"
-#include "Customer.h"
-#include "PremiumCustomer.h"
-#include "RegularCustomer.h"
+#include "Call.hpp"
+#include "Customer.hpp"
+#include "PremiumCustomer.hpp"
+#include "RegularCustomer.hpp"
 
 class Simulation {
 public:
