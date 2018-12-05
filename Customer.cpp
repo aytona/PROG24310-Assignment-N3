@@ -12,7 +12,7 @@ Customer::Customer(std::string name) {
 
 Customer::~Customer() {
     // Need to deallocate all calls created in addCall
-    for (int i = m_Calls.size() - 1; i > m_Calls.size(); --i) {
+    for (int i = m_Calls.size() - 1; i > 0; --i) {
         delete m_Calls.at(i);
     }
     m_Calls.clear();
